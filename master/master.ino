@@ -24,7 +24,7 @@ const int paddle_height = 16;
 const int paddle_width = 3;
 const int ball_size = 2;
 int score1 = 0, score2 = 0;
-//int velocidad_juego = 100;
+// int velocidad_juego = 100;
 
 // variables master
 const char *ssid = "mired";
@@ -125,13 +125,13 @@ void updateBall()
   {
     score2++;
     resetBall();
-    velocidad_juego/=2;
+    //velocidad_juego /= 2;
   }
   else if (ball_x >= SCREEN_WIDTH - ball_size)
   {
     score1++;
     resetBall();
-    velocidad_juego/=2;
+    //velocidad_juego /= 2;
   }
 }
 
